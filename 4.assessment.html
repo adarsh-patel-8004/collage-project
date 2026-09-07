@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Career Assessment</title>
+
+    <link
+        rel="stylesheet"
+        href="4assessment.css"
+    >
+
+</head>
+
+<body>
+
+    <nav class="navbar">
+
+        <div class="logo">
+            AI Career Guidance
+        </div>
+
+        <div class="nav-links">
+
+            <a href="3.dashboard.html">
+                Dashboard
+            </a>
+
+            <a href="4.assessment.html" class="active">
+                Assessment
+            </a>
+
+            <a href="6.profile.html">
+                Profile
+            </a>
+
+            <a href="7.logout.html">
+                Logout
+            </a>
+
+        </div>
+
+    </nav>
+
+    <main class="assessment-container">
+
+
+        <!-- Page Heading -->
+
+        <div class="page-heading">
+
+            <h1>
+                Career Assessment
+            </h1>
+
+            <p>
+                Answer the questions honestly to help us
+                understand your interests, skills and
+                career preferences.
+            </p>
+
+        </div>
+
+        <form
+            class="assessment-form"
+            action="result.html"
+            method="get"
+        >
+
+            <section class="form-section">
+
+                <h2>
+                    👤 Personal Information
+                </h2>
+
+
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label for="name">
+                            Full Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            placeholder="Enter your name"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="age">
+                            Age
+                        </label>
+
+                        <input
+                            type="number"
+                            id="age"
+                            name="age"
+                            placeholder="Enter your age"
+                            min="15"
+                            max="60"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="education">
+                        Current Education
+                    </label>
+
+                    <select
+                        id="education"
+                        name="education"
+                        required
+                    >
+
+                        <option value="">
+                            Select your education
+                        </option>
+
+                        <option value="10th">
+                            10th
+                        </option>
+
+                        <option value="12th">
+                            12th
+                        </option>
+
+                        <option value="diploma">
+                            Diploma
+                        </option>
+
+                        <option value="btech">
+                            B.Tech
+                        </option>
+
+                        <option value="bca">
+                            BCA
+                        </option>
+
+                        <option value="bsc">
+                            B.Sc
+                        </option>
+
+                        <option value="bba">
+                            BBA
+                        </option>
+
+                        <option value="other">
+                            Other
+                        </option>
+
+                    </select>
+
+                </div>
+
+            </section>
+
+            <section class="form-section">
+
+                <h2>
+                    ❤️ Your Interests
+                </h2>
+
+                <p class="question">
+                    1. Which field interests you the most?
+                </p>
+
+
+                <div class="options">
+
+                    <label class="option">
+
+                        <input
+                            type="radio"
+                            name="interest"
+                            value="technology"
+                            required
+                        >
+
+                        <span>
+                            💻 Technology & Programming
+                        </span>
+
+                    </label>
+
+
+                    <label class="option">
+
+                        <input
+                            type="radio"
+                            name="interest"
+                            value="business"
+                        >
+
+                        <span>
+                            📈 Business & Management
+                        </span>
+
+                    </label>
+
+
+                    <label class="option">
+
+                        <input
+                            type="radio"
+                            name="interest"
+                            value="design"
+                        >
+
+                        <span>
+                            🎨 Design & Creativity
+                        </span>
+
+                    </label>
+
+
+                    <label class="option">
+
+                        <input
+                            type="radio"
+                            name="interest"
+                            value="medical"
+                        >
+
+                        <span>
+                            🏥 Healthcare & Medical
+                        </span>
+
+                    </label>
+
+
+                    <label class="option">
+
+                        <input
+                            type="radio"
+                            name="interest"
+                            value="government"
+                        >
+
+                        <span>
+                            🏛️ Government & Civil Services
+                        </span>
+
+                    </label>
+
+                </div>
+
+            </section>
+
+
+            <section class="form-section">
+
+                <h2>
+                    🧠 Your Skills
+                </h2>
+
+                <p class="question">
+                    2. Which skill do you think is your strongest?
+                </p>
+
+
+                <div class="options">
+
+                    <label class="option">
+
+                        <input
+                            type="radio"
+                            name="skill"
+                            value="programming"
+                            required
+                        >
+
+                        <span>
+                            💻 Programming
+                        </span>
+
+                    </label>
+
+
+                    <label class="option">
+
+                        <input
+                            type="radio"
+                            name="skill"
+                            value="communication"
+                        >
+
+                        <span>
+                            🗣️ Communication
+                        </span>
+
+                    </label>
+
+
+                    <label class="option">
+
+                        <input
+                            type="radio"
+                            name="skill"
+                            value="problem-solving"
+                        >
+
+                        <span>
+                            🧩 Problem Solving
+                        </span>
+
+                    </label>
+
+
+                    <label class="option">
+
+                        <input
+                            type="radio"
+                            name="skill"
+                            value="leadership"
+                        >
+
+                        <span>
+                            👥 Leadership
+                        </span>
+
+                    </label>
+
+
+                    <label class="option">
+
+                        <input
+                            type="radio"
+                            name="skill"
+                            value="creativity"
+                        >
+
+                        <span>
+                            💡 Creativity
+                        </span>
+
+                    </label>
+
+                </div>
+
+            </section>
+
+            <section class="form-section">
+
+                <h2>
+                    💼 Work Preference
+                </h2>
+
+                <p class="question">
+                    3. What type of work environment do you prefer?
+                </p>
+
+
+                <div class="options">
+
+                    <label class="option">
+
+                        <input
+                            type="radio"
+                            name="work"
+                            value="office"
+                            required
+                        >
+
+                        <span>
+                            🏢 Office / Corporate
+                        </span>
+
+                    </label>
+
+
+                    <label class="option">
+
+                        <input
+                            type="radio"
+                            name="work"
+                            value="remote"
+                        >
+
+                        <span>
+                            🏠 Remote Work
+                        </span>
+
+                    </label>
+
+
+                    <label class="option">
+
+                        <input
+                            type="radio"
+                            name="work"
+                            value="startup"
+                        >
+
+                        <span>
+                            🚀 Startup
+                        </span>
+
+                    </label>
+
+
+                    <label class="option">
+
+                        <input
+                            type="radio"
+                            name="work"
+                            value="government"
+                        >
+
+                        <span>
+                            🏛️ Government Organization
+                        </span>
+
+                    </label>
+
+
+                    <label class="option">
+
+                        <input
+                            type="radio"
+                            name="work"
+                            value="freelance"
+                        >
+
+                        <span>
+                            🌎 Freelancing / Self Employment
+                        </span>
+
+                    </label>
+
+                </div>
+
+            </section>
+
+
+            <section class="form-section">
+
+                <h2>
+                    🎯 Career Goal
+                </h2>
+
+                <p class="question">
+                    4. What is your primary career goal?
+                </p>
+
+
+                <div class="options">
+
+                    <label class="option">
+
+                        <input
+                            type="radio"
+                            name="goal"
+                            value="high-salary"
+                            required
+                        >
+
+                        <span>
+                            💰 High Salary
+                        </span>
+
+                    </label>
+
+
+                    <label class="option">
+
+                        <input
+                            type="radio"
+                            name="goal"
+                            value="job-security"
+                        >
+
+                        <span>
+                            🔐 Job Security
+                        </span>
+
+                    </label>
+
+
+                    <label class="option">
+
+                        <input
+                            type="radio"
+                            name="goal"
+                            value="passion"
+                        >
+
+                        <span>
+                            ❤️ Follow My Passion
+                        </span>
+
+                    </label>
+
+
+                    <label class="option">
+
+                        <input
+                            type="radio"
+                            name="goal"
+                            value="growth"
+                        >
+
+                        <span>
+                            📈 Career Growth
+                        </span>
+
+                    </label>
+
+
+                    <label class="option">
+
+                        <input
+                            type="radio"
+                            name="goal"
+                            value="social-impact"
+                        >
+
+                        <span>
+                            🌍 Social Impact
+                        </span>
+
+                    </label>
+
+                </div>
+
+            </section>
+
+
+            <section class="form-section">
+
+                <h2>
+                    📝 Additional Information
+                </h2>
+
+                <p class="question">
+                    5. Tell us something about your career expectations.
+                </p>
+
+
+                <textarea
+                    name="message"
+                    rows="5"
+                    placeholder="Write your career goals, interests or expectations..."
+                ></textarea>
+
+            </section>
+
+
+            <div class="submit-section">
+
+                <button type="submit">
+                    Get My Career Recommendation 🚀
+                </button>
+
+            </div>
+
+
+        </form>
+
+    </main>
+
+
+</body>
+</html>
